@@ -22,6 +22,7 @@
 #include<string.h>
 #include<ctype.h>
 
+
 /* 
  * TokenType: Enum of all token types that our lexer can produce.
  */
@@ -32,7 +33,7 @@ typedef enum {
     TOKEN_NUMBER,
     TOKEN_STRING,
     TOKEN_KEYWORD_FN,
-    TOKEN_KWYWORD_IF,
+    TOKEN_KEYWORD_IF,
     TOKEN_KEYWORD_ELSE,
     TOKEN_KEYWORD_VAR,
     TOKEN_KEYWORD_RETURN,

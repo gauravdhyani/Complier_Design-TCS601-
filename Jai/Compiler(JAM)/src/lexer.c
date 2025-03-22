@@ -25,7 +25,7 @@ void skip_whitesapaces();
 void advance();
 char curr_char();
 char next();
-void initlexer();
+void initlexer(char *);
 //initialize JAM lexer
 void initlexer(char *src){
     lexer.source = src;

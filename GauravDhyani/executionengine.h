@@ -3,14 +3,6 @@
 
 #include "parser.h"
 
-// Structure for symbol table entries
-typedef struct SymbolTableEntry {
-    char *name;
-    char *type;
-    int argCount;
-    struct SymbolTableEntry *next;
-} SymbolTableEntry;
-
 // Structure for environment entries (variables and their values)
 typedef struct EnvEntry {
     char *name;
@@ -29,10 +21,6 @@ typedef struct CallStackEntry {
     EnvEntry *env;
     struct CallStackEntry *next;
 } CallStackEntry;
-
-// Global symbol table and call stack
-extern SymbolTableEntry *symbolTable;
-extern CallStackEntry *callStack;
 
 // Function declarations
 void freeSymbolTable(SymbolTableEntry *table);

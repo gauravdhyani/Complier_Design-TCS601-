@@ -22,11 +22,13 @@ This guide shows how to compile the JAM compiler source files into a static libr
    Run the following command inside the `JAM` directory:
 
    ```bash
-   gcc -c lexer.c parser.c semanticanalyser.c executionengine.c ```
+   gcc -c lexer.c parser.c semanticanalyser.c executionengine.c 
+   ```
 2. Create the static library libjam.a
    Use the ar command to bundle the object files:
 
    ```bash
-   ar rcs libjam.a lexer.o parser.o semanticanalyser.o executionengine.o ```
+   ar rcs libjam.a lexer.o parser.o semanticanalyser.o executionengine.o 
+   ```
 
 This will generate libjam.a, which can now be linked with your shell or other applications.

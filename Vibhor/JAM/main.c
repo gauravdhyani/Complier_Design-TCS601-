@@ -8,17 +8,17 @@
 #include "semanticanalyser.h"
 
 int main() {
-    // char *source_code =
-    //     "function factorial(n: int): int {\n"
-    //     "  if n <= 1 {\n"
-    //     "    return 1;\n"
-    //     "  } else {\n"
-    //     "    return n * factorial(n - 1);\n"
-    //     "  }\n"
-    //     "}\n"
-    //     "var result: int = factorial(5);";
+    char *source_code =
+        "function factorial(n: int): int {\n"
+        "  if n <= 1 {\n"
+        "    return 1;\n"
+        "  } else {\n"
+        "    return n * factorial(n - 1);\n"
+        "  }\n"
+        "}\n"
+        "var result: int = factorial(5);";
 
-    char* source_code = "fn main() { var x = 10; return x + 5; }";
+    // char* source_code = "fn main() { var x = 10; return x + 5; }";
 
     initlexer(source_code);
     ASTNode *ast = parse_program();

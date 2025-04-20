@@ -322,23 +322,20 @@ Token* get_next_token()
     }
     return create_token(TOKEN_EOF, "EOF", lexer.line, lexer.col);
 }
-int main() {
-    //array example
-    char* source = "fn main() {\n"
-                   "    var arr:[Int]=[1,2,3,4]\n"
-                   "    var y = 20;\n"
-                   "    var z = x + y;\n"
-                   "    return arr[0];\n"
-                   "}\n";
-    initlexer(source);
-    Token* token;
-    while ((token = get_next_token())->type != TOKEN_EOF) {
-        printf("<Token: %d, Lexeme: %s, Line: %d, Col: %d>\n",token->type, token->lexeme, token->line, token->col);
-        free(token->lexeme);
-        free(token);
-    }
-    // Clean up the EOF token.
-    free(token->lexeme);
-    free(token);
-    return 0;
-}
+
+// int main(void) {
+//     const char *src = "var x = 10;\n"
+//                       "if (x > 5) {\n"
+//                       "    return x;\n"
+//                       "} else {\n"
+//                       "    return 0;\n"
+//                       "}\n";
+//     initlexer((char*)src);
+//     Token *t;
+//     while ((t = get_next_token())->type != TOKEN_EOF) {
+//         printf("<Token: %s (Type: %d, Line: %d, Col: %d)>\n", 
+//                t->lexeme, t->type, t->line, t->col);
+//         free(t->lexeme); free(t);
+//     }
+//     free(t->lexeme); free(t);
+// }

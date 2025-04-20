@@ -1,42 +1,58 @@
 #ifndef PARSER_H
 #define PARSER_H
+
 #include "lexer.h"
-typedef enum
-{
-    NODE_TYPE_EXPRESSION,
-    NODE_TYPE_STATEMENT,
-    NODE_TYPE_DECLARATION,
-    NODE_TYPE_FUNCTION,
-    NODE_TYPE_BLOCK,
-    NODE_TYPE_IF,
-    NODE_TYPE_WHILE,
-    NODE_TYPE_FORLOOP,
-    NODE_TYPE_RETURN,
-    NODE_TYPE_ASSIGNMENT,
-    NODE_TYPE_BINARY_OP,
-    NODE_TYPE_UNARY_OP,
-    NODE_TYPE_CALL,
-    NODE_TYPE_IDENTIFIER,
-    NODE_TYPE_LITERAL
+#include <stdlib.h>
+
+typedef enum {
+    AST_NUMBER,
+    AST_STRING,
+    AST_IDENTIFIER,
+    AST_BINARY_EXPR,
+    AST_VAR_DECL,
+    AST_RETURN,
+    AST_FUNCTION,  // <-- new
+    AST_PROGRAM
 } ASTNodeType;
-typedef struct ASTNode
-{
+
+typedef struct ASTNode {
     ASTNodeType type;
-    union
-    {
-        int num;
-        char *str;
-        struct
-        {
-            struct ASTNode *left;
-            Token *op;
-            struct ASTNode *right;
+    union {
+        int               number;   // AST_NUMBER
+        char*             string;   // AST_STRING
+        char*             identifier; // AST_IDENTIFIER
+        struct {                    // AST_BINARY_EXPR
+            struct ASTNode* left;
+            Token*           operator;
+            struct ASTNode* right;
         } binary;
+        struct {                    // AST_VAR_DECL
+            char*            varName;
+            struct ASTNode* initializer;  // may be NULL
+        } varDecl;
+        struct {                    // AST_RETURN
+            struct ASTNode* expr;
+        } returnStmt;
+        struct {                    // AST_FUNCTION
+            char*            name;
+            struct ASTNode* body;       // a BLOCK represented as AST_PROGRAM
+        } function;
+        struct {                    // AST_PROGRAM (top-level)
+            struct ASTNode** statements;
+            int               count;
+        } program;
     } data;
 } ASTNode;
-typedef struct
-{
-    Token *tokens;
-    int current;
-    int tokenCount;
+
+typedef struct {
+    Token** tokens;
+    int     current;
+    int     tokenCount;
 } Parser;
+
+void initParser(Parser* p, Token** tokens, int tokenCount);
+ASTNode* parseProgram(Parser* p);
+void printAST(ASTNode* node, int indent);
+void freeAST(ASTNode* node);
+
+#endif // PARSER_H

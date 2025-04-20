@@ -322,7 +322,6 @@ Token* get_next_token()
 }
 /*
 int main() {
-    //array example
     char* source = "fn main() {\n"
                    "    var arr:[Int]=[1,2,3,4]\n"
                    "    var y = 20;\n"
@@ -336,7 +335,6 @@ int main() {
         free(token->lexeme);
         free(token);
     }
-    // Clean up the EOF token.
     free(token->lexeme);
     free(token);
     return 0;

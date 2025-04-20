@@ -91,6 +91,7 @@ typedef struct {
     int line;
     int col;
 } Token;
-
+void initlexer(char *source);
+Token *get_next_token(void);
 #define LEXER_H
 #endif

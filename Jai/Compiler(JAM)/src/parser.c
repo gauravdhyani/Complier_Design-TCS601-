@@ -238,7 +238,8 @@ void freeAST(ASTNode* node) {
                 freeAST(node->data.program.statements[i]);
             free(node->data.program.statements);
             break;
-        
+        case AST_NUMBER:
+            break;
     }
     free(node);
 }

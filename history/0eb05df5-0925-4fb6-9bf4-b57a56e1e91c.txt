@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello.  I'm here to help you with any questions or concerns about recycling, waste disposal, and environmental sustainability. What would you like to know?

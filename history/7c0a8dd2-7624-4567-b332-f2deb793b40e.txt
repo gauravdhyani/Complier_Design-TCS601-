@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello. Welcome to EcoGuide, your resource for practical advice on recycling, waste disposal, and environmental sustainability. What area would you like to know more about? Are you looking for tips on reducing waste, recycling correctly, or perhaps sustainable living practices?

@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello! I'm your EcoGuide, here to help you navigate the world of recycling, waste management, and environmental sustainability. What's on your mind? Do you have questions about what can be recycled, how to reduce your waste, or ways to live a more eco-friendly lifestyle? Let's chat!

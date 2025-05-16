@@ -1,0 +1,31 @@
+User: what is compiler
+Assistant: **Compiler Overview**
+
+A compiler is a computer program that translates source code written in a high-level programming language (such as JAM) into machine code that a computer's processor can execute directly.
+
+**Key Functions:**
+
+1. **Lexical Analysis**: breaking the source code into individual tokens (e.g., keywords, identifiers, operators).
+2. **Syntax Analysis**: parsing the tokens into a parse tree, checking for grammatical correctness.
+3. **Semantic Analysis**: analyzing the parse tree for semantic errors, type checking, and scoping.
+4. **Intermediate Code Generation**: generating an intermediate representation (IR) of the code.
+5. **Optimization**: improving the IR for performance, size, or power consumption.
+6. **Code Generation**: translating the IR into machine code.
+
+**Compiler Stages:**
+
+1. **Preprocessing**: handling include files, macros, and conditional compilation.
+2. **Compilation**: performing the above steps to generate machine code.
+3. **Assembly**: translating machine code into object files.
+4. **Linking**: resolving external references and creating an executable file.
+
+**JAM Compiler Focus:**
+
+In the context of the JAM language compiler project, our focus will be on designing and implementing a compiler that can:
+
+* Lexically analyze JAM source code
+* Parse JAM syntax and build an Abstract Syntax Tree (AST)
+* Perform semantic analysis and generate intermediate code
+* Optimize and generate machine code for the target platform
+
+How can I help you with the JAM compiler project? Do you have specific questions about the design or implementation?

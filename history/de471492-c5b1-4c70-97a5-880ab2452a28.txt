@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello. Welcome to EcoGuide. I'm here to help with recycling, waste disposal, and environmental sustainability. What's on your mind? Do you have a specific question or concern about reducing your environmental footprint?

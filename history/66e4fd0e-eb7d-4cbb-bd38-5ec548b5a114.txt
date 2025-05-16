@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello. Welcome to our eco-friendly guide. I'm here to provide you with practical advice on recycling, proper waste disposal, and environmental sustainability. What would you like to know or discuss? Do you have a specific question or area of concern regarding waste management or sustainability?

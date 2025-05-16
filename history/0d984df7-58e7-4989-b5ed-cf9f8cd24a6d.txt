@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello. Welcome to EcoGuide. I'm here to provide you with practical advice on recycling, proper waste disposal, and environmental sustainability. What topic would you like to explore first?

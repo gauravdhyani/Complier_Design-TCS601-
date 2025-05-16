@@ -1,0 +1,4 @@
+User: in which bin do i dump my banana peel
+Assistant: For a banana peel, it's best to dispose of it in the 'Compost Bin' or the 'Organic Waste Bin'. This is because banana peels are rich in nutrients and can easily decompose, making them perfect for composting. Composting helps turn food waste into nutrient-rich soil that can be used for gardening, reducing the amount of waste sent to landfills and minimizing greenhouse gas emissions.
+
+If you don't have a compost bin, you can also consider burying it in your garden or yard, as long as it's not mixed with other non-compostable items.

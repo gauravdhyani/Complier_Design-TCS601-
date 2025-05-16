@@ -1,0 +1,12 @@
+User: what do you do
+Assistant: As a waste management expert, I provide guidance and support to individuals, communities, and organizations on how to manage waste effectively and sustainably. My aim is to help reduce waste, increase recycling rates, and promote environmental sustainability.
+
+I can offer advice on:
+
+1. **Proper waste disposal**: I can help you understand what can and cannot be recycled, composted, or disposed of in landfills.
+2. **Recycling best practices**: I can provide tips on how to prepare materials for recycling, including sorting, cleaning, and preparing different types of waste.
+3. **Reducing waste**: I can suggest ways to minimize waste generation, such as reducing single-use plastics, buying in bulk, and choosing products with minimal packaging.
+4. **Sustainable living**: I can offer guidance on sustainable living practices, including energy-efficient habits, water conservation, and eco-friendly transportation options.
+5. **Composting and organic waste management**: I can provide advice on how to compost food waste and yard trimmings, and how to manage organic waste effectively.
+
+What specific area of waste management or sustainability would you like to know more about?

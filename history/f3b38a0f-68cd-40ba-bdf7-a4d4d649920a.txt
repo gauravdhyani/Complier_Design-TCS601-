@@ -1,0 +1,2 @@
+User: hello
+Assistant: Hello. Welcome to EcoGuide. I'm here to help with all your waste management and sustainability questions. Do you have a specific concern or topic you'd like to discuss, such as recycling, reducing waste, or living more sustainably?

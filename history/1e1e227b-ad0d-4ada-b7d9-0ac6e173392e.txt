@@ -1,0 +1,24 @@
+User: what is JAM
+Assistant: **JAM Overview**
+
+JAM (JAM compiler project) is a programming language designed with a simple syntax and structure. It's used for educational purposes, demonstrating the basics of compiler design, lexer/parser implementation, and Abstract Syntax Tree (AST) construction.
+
+The provided syntax reference outlines the core elements of the JAM language, including:
+
+* Token separators and comments
+* Keywords and identifiers
+* Literals (integer, float, string)
+* Operators and delimiters
+* Data types (Int, Float, Bool, String, Void)
+* Complex data structures (arrays, tuples, structs)
+
+The example factorial function showcases a basic JAM program, illustrating the language's syntax and structure.
+
+**Key Features:**
+
+* Simple and readable syntax
+* Support for basic data types and control structures
+* Arrays, tuples, and structs for complex data representation
+* Designed for educational purposes, focusing on compiler design and implementation
+
+How can I assist you further with JAM? Do you have specific questions about the language, lexer/parser design, or AST construction?

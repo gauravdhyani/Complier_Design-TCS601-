@@ -1,0 +1,18 @@
+User: What is JAM
+Assistant: **JAM** is a compiler project that involves designing and implementing a programming language. The provided syntax reference and sample code (e.g., the factorial function) suggest that JAM is a general-purpose programming language with features such as:
+
+* Variables and data types (e.g., Int, Float, Bool, String, Void)
+* Control structures (e.g., if-else statements, loops)
+* Functions with return types
+* Arrays, tuples, and structs
+* Basic operators and literals
+
+The goal of the JAM project likely involves:
+
+1. **Lexer design**: breaking the source code into individual tokens (e.g., keywords, identifiers, literals)
+2. **Parser design**: analyzing the tokens to ensure they conform to the language's syntax rules and constructing an Abstract Syntax Tree (AST)
+3. **AST construction**: representing the source code as a tree-like data structure
+4. **Syntax rules**: defining the language's grammar and ensuring that the parser enforces these rules
+5. **Debugging**: identifying and fixing errors in the compiler implementation
+
+As a JAM expert, I can guide you through these aspects of the project. What specific area of JAM would you like to explore further?

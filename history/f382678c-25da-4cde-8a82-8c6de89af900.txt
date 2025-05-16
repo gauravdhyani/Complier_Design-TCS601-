@@ -1,0 +1,81 @@
+User: hi how does JAM work and it's sytax
+Assistant: **Introduction to JAM**
+
+JAM (JAM compiler project) is a programming language designed with a simple syntax and efficient compilation process. Here's an overview of how JAM works and its syntax:
+
+**Syntax Overview**
+
+The JAM syntax is designed to be easy to read and write. It consists of the following elements:
+
+* **Token Separators**: Space, tab (`\t`), newline (`\n`), and carriage return (`\r\n`) are used to separate tokens.
+* **Comments**: Single-line comments start with `**`, and multiline comments are enclosed in `*- ... -*`.
+* **Keywords**: The following keywords are reserved in JAM:
+	+ `fn`: function declaration
+	+ `if`, `else`: conditional statements
+	+ `var`: variable declaration
+	+ `return`: return statement
+	+ `import`: import statement
+	+ `loop`, `forloop`: loop statements
+* **Identifiers**: Identifiers are composed of letters (`A-Za-z`), underscores (`_`), and digits (`0-9`), but must start with a letter or underscore.
+* **Literals**: JAM supports the following literals:
+	+ Integer: one or more digits (`\d+`)
+	+ Float: a decimal number (`\d+\.\d+`)
+	+ String: a sequence of characters enclosed in double quotes (`"..."`) with escape sequences
+* **Operators**: JAM supports various operators, including:
+	+ Arithmetic: `+`, `-`, `*`, `/`, `%`
+	+ Comparison: `==`, `!=`, `<`, `<=`, `>`, `>=`
+	+ Logical: `&&`, `||`, `!`
+* **Arrow (Return Type)**: The arrow symbol (`->`) is used to indicate the return type of a function.
+* **Delimiters**: JAM uses the following delimiters:
+	+ Parentheses: `(`, `)`
+	+ Braces: `{`, `}`
+	+ Brackets: `[`, `]`
+	+ Colon: `:`
+	+ Semicolon: `;`
+	+ Dot: `.`
+
+**Data Types**
+
+JAM supports the following data types:
+
+* **Int**: a 32-bit integer
+* **Float**: a 64-bit floating-point number
+* **Bool**: a boolean value (true or false)
+* **String**: a sequence of characters
+* **Void**: the absence of a value
+
+**Composite Types**
+
+JAM also supports composite types:
+
+* **Arrays**: a collection of values of the same type, declared using the `var` keyword and square brackets (`[]`).
+* **Tuples**: a collection of values of different types, declared using the `var` keyword and parentheses (`()`).
+* **Structs**: a custom data type composed of multiple fields, declared using the `struct` keyword and braces (`{}`).
+
+**Example**
+
+Here's an example of a JAM function that calculates the factorial of a given integer:
+```jam
+fn factorial(n: Int) -> Int {
+  if n <= 1 {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+var result: Int = factorial(5);
+```
+This example demonstrates the syntax and structure of a JAM program.
+
+**How JAM Works**
+
+The JAM compiler works as follows:
+
+1. **Lexical Analysis**: The compiler reads the source code and breaks it into individual tokens, such as keywords, identifiers, literals, and operators.
+2. **Syntax Analysis**: The compiler analyzes the tokens to ensure that they form a valid JAM program, using a parser to check the syntax.
+3. **Abstract Syntax Tree (AST) Construction**: The compiler builds an AST representation of the program, which is used for further analysis and optimization.
+4. **Semantic Analysis**: The compiler checks the AST for semantic errors, such as type errors or scoping issues.
+5. **Code Generation**: The compiler generates machine code from the AST, which can be executed directly by the computer.
+
+I hope this helps! Let me know if you have any specific questions about JAM or its syntax.

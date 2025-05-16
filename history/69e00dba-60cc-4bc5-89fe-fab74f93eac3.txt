@@ -1,0 +1,27 @@
+User: what is JAM
+Assistant: **JAM** is a programming language project that involves designing a compiler. The language syntax is defined with a set of rules and structures, including token separators, comments, keywords, identifiers, literals, operators, and data types.
+
+The provided syntax reference includes:
+
+* **Token separators**: space, tab (`\t`), newline (`\n`), and carriage return newline (`\r\n`)
+* **Comments**: single-line (`**`) and multiline (`*- ... -*`)
+* **Keywords**: `fn`, `if`, `else`, `var`, `return`, `import`, `loop`, and `forloop`
+* **Data types**: `Int`, `Float`, `Bool`, `String`, and `Void`
+* **Control structures**: `if-else` statements, `loop`, and `forloop`
+* **Functions**: defined using the `fn` keyword, with optional return types (`->`)
+* **Variables**: declared using the `var` keyword
+* **Arrays**, **Tuples**, and **Structs**: supported with specific syntax
+
+The example **factorial function** demonstrates how to write a simple recursive function in JAM:
+```jam
+fn factorial(n: Int) -> Int {
+  if n <= 1 {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+var result: Int = factorial(5);
+```
+This language aims to provide a structured and readable way to write programs, with a focus on compiler design and construction. How can I assist you further with JAM? Do you have specific questions about the language, lexer/parser design, or AST construction?

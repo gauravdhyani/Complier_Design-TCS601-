@@ -1,2 +1,3 @@
-# Complier_Design-TCS601-
-Contributions and sample codes for Mini language Compiler Project(Jai,Vibhor,Gaurav)
+# Compiler Design ( CD-VI-T169)
+## JAM: Just another Micro-Language Compiler
+### Team Invicta Ittai

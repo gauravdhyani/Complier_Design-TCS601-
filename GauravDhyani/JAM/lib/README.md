@@ -14,9 +14,8 @@ This guide shows how to compile the JAM compiler source files into a static libr
 │   ├── semanticanalyser.h
 │   ├── executionengine.c
 │   ├── executionengine.h
-│   ├── main.c                 # Optional: for standalone JAM execution
    ```
-## 🛠️ Steps to Build
+##  Steps to Build
 
 1. **Compile source files into object files**  
    Run the following command inside the `JAM` directory:

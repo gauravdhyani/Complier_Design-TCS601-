@@ -26,7 +26,6 @@
 /* 
  * TokenType: Enum of all token types that our lexer can produce.
  */
-
 typedef enum {
     TOKEN_EOF,
     TOKEN_IDENTIFIER,
@@ -75,7 +74,7 @@ typedef enum {
     TOKEN_KEYWORD_TRUE,
     TOKEN_KEYWORD_FALSE,
     TOKEN_KEYWORD_NULL
-} TokenType; 
+} TokenType;
 
 /* 
  * Token: A struct that represents a token produced by the lexer.
@@ -91,9 +90,7 @@ typedef struct {
     int line;
     int col;
 } Token;
-
-void initlexer(char *source_code);
-Token *get_next_token();
-
+void initlexer(char *source);
+Token *get_next_token(void);
 #define LEXER_H
 #endif

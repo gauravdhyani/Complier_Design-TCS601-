@@ -14,18 +14,18 @@ This is the integrated version of the JAM compiler.
 │   ├── semanticanalyser.h
 │   ├── executionengine.c
 │   ├── executionengine.h
-│   ├── main.c                 # Optional: for standalone JAM execution
+│   ├── main.c                 
 ```
-## 🚀 How to Run
+##  How to Run
 
 1. **Compile the program**  
    Open your terminal in the `JAM` directory and run:
 
    ```bash
-   gcc -o jam main.c lexer.c parser.c semanticanalyser.c executionengine.c -Wall -g 
+   gcc -o jamexample main.c lexer.c parser.c semanticanalyser.c executionengine.c -Wall -g 
    ```
 2. **Execute the program**
    After successful compilation, run the JAM interpreter:
    ```bash
-   ./jam 
+   ./jamexample 
    ```

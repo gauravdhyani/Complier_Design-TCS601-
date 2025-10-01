@@ -5,7 +5,7 @@
 
 ---
 
-## 📖 Introduction  
+##  Introduction  
 **JAM (Just Another Micro-Language)** is a lightweight, C-based language and compiler prototype designed to demonstrate the **phases of compiler construction** — lexical analysis, parsing, semantic analysis, and execution.  
 
 The project is modular and educational, offering a simplified yet functional compiler-interpreter pipeline that emphasizes **error detection, AST generation, symbol management, and runtime execution**.  
@@ -34,3 +34,4 @@ This project serves as a **learning platform for compiler principles** and a fou
 - **Multi-typed yet Minimal Design:** Supports Int, Float, Bool, String, arrays, and structs.  
 
 ---
+
